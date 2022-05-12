@@ -21,7 +21,7 @@ export const Header = () => {
                 </Navbar.Text>
                
                <Nav>
-                   <Dropdown alignRight align={{ lg: 'start' }}>
+                   <Dropdown  align={{ lg: 'start' }}>
                        <Dropdown.Toggle variant='success' >
                             <FaShoppingCart color='white' fontSize='25px'></FaShoppingCart>
                             <Badge bg='#fff'>{10}</Badge>
