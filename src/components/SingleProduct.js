@@ -30,9 +30,24 @@ const {
             {
               cart.some(p => p.id === product.id)?
               (
-                <Button className='btn-sm' variant='danger'>Remove from cart</Button>
+                <Button onClick={() =>{
+                  dispatch({
+                    type:'REMOVE_FROM_CART',
+                    payload: product,
+                  })
+                }} 
+                className='btn-sm' 
+                variant='danger'
+                >Remove from cart</Button>
               ) : (
-                <Button className='btn-sm' disabled={!product.inStock}>
+                <Button
+                onClick={() =>{
+                  dispatch({
+                    type:'ADD_TO_CART',
+                    payload: product,
+                  })
+                }} 
+                className='btn-sm' disabled={!product.inStock}>
                 {!product.inStock ? 'Out of Stock' : 'Add to cart'}
                </Button>
               )
