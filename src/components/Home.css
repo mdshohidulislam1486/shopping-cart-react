@@ -5,23 +5,29 @@
 .productContainer  {
     display: flex;
     width: 78%;
-    padding:20px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 20px;
+   flex-wrap: wrap;
+   justify-content: space-around;
 }
+
+.products {
+    max-width: 20em;
+    margin:1em .5em;
+  }
+  
 
 .filters{
     background-color: #343a40;
-    color: #fff;
+    color: white;
     padding: 20px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 20%;
     margin: 10px;
     height: 86vh;
 }
 
-.filters > span{
+.filters > span {
     padding-bottom: 20px;
 }
 
@@ -31,7 +37,7 @@
 
 .cartitem{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 0 20px;
     margin-bottom: 20px;
@@ -46,4 +52,7 @@
     display: flex;
     flex: 1;
     padding: 0 20px;
+}
+.summery {
+    width: 30%;
 }

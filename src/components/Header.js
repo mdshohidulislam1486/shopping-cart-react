@@ -59,6 +59,9 @@ export const Header = () => {
                                 </span>
                                ))
                            }
+                           <Link to='/cart'>
+                               <Button style={{width:'95%', margin:'0 10px'}}> Go to Cart </Button>
+                           </Link>
                            </>) : (<span style={{padding:10}}>Cart is empty</span>)}
                        </Dropdown.Menu>
                    </Dropdown>
